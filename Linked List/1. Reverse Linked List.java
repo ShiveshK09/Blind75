@@ -24,15 +24,9 @@ class Solution {
     }
 }
 /*
-3 POINTERS
-PRE = null
-CUR = head
-
-while CUR:
-    NEXT = CUR.next
-    CUR.next = PRE
-    PRE = CUR
-    CUR = NEXT
-
-return PRE
+PRE ← CUR → NEXT
+NEXT = CUR.next;   // 1. Save next
+CUR.next = PRE;    // 2. Reverse the link
+PRE = CUR;         // 3. Move PRE
+CUR = NEXT;        // 4. Move CUR
 */
