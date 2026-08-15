@@ -13,3 +13,27 @@ class Solution {
         return st.isEmpty();
     }
 }
+/*
+OPEN (‘{’)→ PUSH, CLOSE (‘}’)→ MATCH → POP
+Read Character
+      ↓
+Is it OPEN?
+   /       \
+ YES        NO
+  ↓          ↓
+PUSH       Stack Empty?
+             /    \
+           YES     NO
+            ↓       ↓
+          FALSE    POP
+                     ↓
+                  MATCH?
+                 /      \
+               YES       NO
+                ↓         ↓
+             Continue    FALSE
+Stack Empty?
+   ↓
+YES → Valid
+NO  → Invalid
+*/
