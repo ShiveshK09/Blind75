@@ -10,3 +10,15 @@ class Solution {
         return new int[]{-1,-1};
     }
 }
+/*
+Find what I NEED → CHECK if I saw it → STORE what I have.
+HashMap
+   ↓
+target - current
+   ↓
+Check map
+   ↓
+Found → Answer
+   ↓
+Not found → Store
+*/
