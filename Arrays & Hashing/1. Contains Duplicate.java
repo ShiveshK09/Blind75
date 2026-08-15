@@ -7,3 +7,16 @@ class Solution {
    return false;
     }
 }
+
+/*
+Check → Add
+         Number n
+             ↓
+      Is n already in Set?
+        /             \
+      YES              NO
+       ↓                ↓
+   Duplicate         Add to Set
+    return true          ↓
+                       Continue
+*/
