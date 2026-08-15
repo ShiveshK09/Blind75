@@ -11,3 +11,14 @@ class Solution {
         return profit;
     }
 }
+/*
+Lowest Buy → Current Sell → Max Profit
+a. If today's price > buying price
+       → Calculate profit
+       → Update maximum profit
+b. Else
+       → Today's price is cheaper
+       → Move buying day to today
+c. Continue until the end
+
+*/
