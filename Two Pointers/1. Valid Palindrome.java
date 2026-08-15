@@ -12,3 +12,19 @@ class Solution {
         return true;
     }
 }
+/*
+TWO POINTERS → SKIP(!Character.isLetterOrDigit()) → COMPARE (Character.toLowerCase())→ MOVE
+      LEFT              RIGHT
+        ↓                 ↓
+   Skip non-valid    Skip non-valid
+        ↓                 ↓
+        └──── COMPARE ────┘
+                 ↓
+            Different?
+           /          \
+         YES           NO
+          ↓             ↓
+       FALSE        Move inward
+                        ↓
+                     Repeat
+*/
