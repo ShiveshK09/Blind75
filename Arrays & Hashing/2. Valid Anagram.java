@@ -11,3 +11,19 @@ class Solution {
         return true;
     }
 }
+/*
+Same Length → Count + → Count − → Check Zero
+        Same Length?
+          /     \
+        NO       YES
+        ↓         ↓
+      false    COUNT
+                  ↓
+        s → +1   t → -1
+                  ↓
+            Check all ZERO
+             /          \
+           YES           NO
+            ↓             ↓
+          true          false
+*/
